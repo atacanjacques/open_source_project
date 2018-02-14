@@ -7,13 +7,13 @@ deploy:
   provider: heroku
   api_key:
     secure: TdqcLoSLSRDE91Y+8e42SZYfpL1due/6SFeyVy+BCfVAqNT3tD3N8BhDzQv2Omcq0f1cRDMBiesXB5RMVukcw3IMUQT/etSrTyA9OsUK+CAWv7Kwp6gW3aT41rqGGwQbRytLWxWzdEL7CYv3WXcsInkM4dPOtQibcvuAibPI+YR037OTZobbDJmB4HfH3ctfCIVhQTx38AQb3L653o6REHjeB8XxLXIHKYDkKnI/9FQRGP7cww8P/dm1prjb+W0X9G9nbQ+SjOlnyUZU3EDhQiF/4hTFN2beKJEO2GfluOs1zgBxoGreAYqdBnb1ZwO3hfzgAihsLzDG55L1WZPmHgyztb+JzRcE+oJasqSdRjmM7osXv8gTF1oW4wHXL183rgVioOrVe/mNyBURU/snMwdDpHvDklcBMDrN5ReJFifAtxJHXg4aehR5xKiYTJCDDpBRd+LV1ZcnSGKUVgeV6a+ShFjZ9ynBrYP/v8kLtIFsLrli6uMx9YlmEkfOyMGsHhWKP8dXyVS5EUfdNlrzVoccOaSl5iHZggKlvwxcsrYDS+96/gP2kxa6g1JfW6276Mz7jwlfsEroUi7MMEIVKOVcetX1oEWnYeJnw518uGxeiF5bsAfM0iMg+A5kyGFOzj9WbvchGDuQFlpFEtBuskMuzR+prjvxSlR/XrPisfE=
-  app: open_source_project
+  app: project-open-source
   on:
     repo: atacanjacques/open_source_project
     branch: travis
 notifications:
   email:
     recipients:
-    - atacan.jacques@gmail.com
+        - atacan.jacques@gmail.com
     on_success: never
     on_failure: always
