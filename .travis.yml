@@ -1,12 +1,12 @@
 language: php
 php: 7.0 7.1
 script:
-  - composer global require "squizlabs/php_codesniffer=*"
-  - /home/travis/.composer/vendor/bin/phpcs .
+- composer global require "squizlabs/php_codesniffer=*"
+- "/home/travis/.composer/vendor/bin/phpcs ."
 deploy:
   provider: heroku
   api_key:
-    secure: TdqcLoSLSRDE91Y+8e42SZYfpL1due/6SFeyVy+BCfVAqNT3tD3N8BhDzQv2Omcq0f1cRDMBiesXB5RMVukcw3IMUQT/etSrTyA9OsUK+CAWv7Kwp6gW3aT41rqGGwQbRytLWxWzdEL7CYv3WXcsInkM4dPOtQibcvuAibPI+YR037OTZobbDJmB4HfH3ctfCIVhQTx38AQb3L653o6REHjeB8XxLXIHKYDkKnI/9FQRGP7cww8P/dm1prjb+W0X9G9nbQ+SjOlnyUZU3EDhQiF/4hTFN2beKJEO2GfluOs1zgBxoGreAYqdBnb1ZwO3hfzgAihsLzDG55L1WZPmHgyztb+JzRcE+oJasqSdRjmM7osXv8gTF1oW4wHXL183rgVioOrVe/mNyBURU/snMwdDpHvDklcBMDrN5ReJFifAtxJHXg4aehR5xKiYTJCDDpBRd+LV1ZcnSGKUVgeV6a+ShFjZ9ynBrYP/v8kLtIFsLrli6uMx9YlmEkfOyMGsHhWKP8dXyVS5EUfdNlrzVoccOaSl5iHZggKlvwxcsrYDS+96/gP2kxa6g1JfW6276Mz7jwlfsEroUi7MMEIVKOVcetX1oEWnYeJnw518uGxeiF5bsAfM0iMg+A5kyGFOzj9WbvchGDuQFlpFEtBuskMuzR+prjvxSlR/XrPisfE=
+    secure: n2ugG6uckS+xUbwHQ2vmWQ5cbSXiQB+GrzJB5toehwHfCluHnH03gSpJOmpvF9HkhmCJDgHKEA6rJBVqBgBoHnFvB0oYiqvTdDEBS//DrIy03izWgFbqz1ahSVcmsOg5JOVMBdTNfRDPX2g+8R4OSgAlHVu1kg89mWZKEBvo4+wYzBtdttGVsT3gHFckSOLP5KFgS9B+FRucGt7pJ62jNHuWwqBA+dEzX7n4//FdUANkDi/rtUpymHHkdAWVHGf5Z98AezhjXT/hJTQDV52HpJslR3kEHJ5s38Bd0UCVrxt+YoeeUBg9/0M5bx9+l3w9zvaMYX30vCsE0CHeqU82RhS9kW9opoXfZzJaAX3oiiLH+Ca3hY6zE9KreoYiKWPwZoT38P2v5d5Eb8aNdKbIqUNKYR21FKotfVKFYSM7kofoyOKEryBO4FVkwmKTOFbRnSIQZGt0wwsmp9twZPSOBN/6Dv6lawJT3RVx9Poh3FP7Z9maBALe74OWvF17V9tK4BFYVAOjB+EEIhbf0h9S81tpcEqAhptnGTBZN7m3YbEvdpzIt7O2tDE0PbLcEhzucMCdhqTzwEZILU/wrXNTCrCPEby+OQT6e2iHWsMCJ5pQR2zhnDddStUUZEaGeBBveUKsn4YQgE8NTnI5u73kV71odo9Uu5nhjqQo+mdDRlI=
   app: project-open-source
   on:
     repo: atacanjacques/open_source_project
@@ -14,6 +14,6 @@ deploy:
 notifications:
   email:
     recipients:
-        - atacan.jacques@gmail.com
+    - atacan.jacques@gmail.com
     on_success: never
     on_failure: always
