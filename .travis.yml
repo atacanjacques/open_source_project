@@ -1,7 +1,8 @@
 language: php
 php: 7.0 7.1
-before_script: composer require "squizlabs/php_codesniffer=*"
-script: phpcs .
+script:
+  - composer global require "squizlabs/php_codesniffer=*"
+  - /home/travis/.composer/vendor/bin/phpcs .
 deploy:
   provider: heroku
   api_key:
@@ -10,3 +11,9 @@ deploy:
   on:
     repo: atacanjacques/open_source_project
     branch: travis
+notifications:
+  email:
+    recipients:
+    - atacan.jacques@gmail.com
+    on_success: never
+    on_failure: always
